@@ -1,0 +1,116 @@
+body {
+  font: normal 12pt Arial;
+  background-color: #bad9cc;
+  overflow: hidden;
+}
+
+header {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 5%;
+}
+
+#logo_nome {
+  height: 150px;
+  width: 150px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+section {
+  border-radius: 10px;
+  padding: 35px;
+  width: 400px;
+  margin: auto;
+}
+
+section h1 {
+  margin-left: 70px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 13px;
+  width: 350px;
+  padding: 15px;
+  font-size: 15px;
+  margin: 15px;
+}
+
+button#botão {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 170px;
+  height: 45px;
+  border-radius: 23px;
+  background-color: #038c5a;
+  color: white;
+  border-color: black;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+#botão:hover {
+  background-color: #669f8a;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.copyright p {
+  font-style: italic, bold;
+}
+
+#imagem-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.links {
+  text-decoration: none;
+  display: flex;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-style: oblique;
+}
+
+.links a:hover {
+  color: #038c5a;
+  transition: 0.5s;
+}
+
+.imagem-lateral {
+  position: absolute;
+  bottom: 77px;
+  left: -170px;
+  width: 100%;
+  max-width: 500px;
+  opacity: 0.7;
+}
+
+.imagem-lateral2 {
+  position: absolute;
+  bottom: 78px;
+  right: -120px;
+  width: 100%;
+  max-width: 260px;
+  opacity: 0.7;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: -2px;
+  background-color: #669f8a;
+  width: 110%;
+  height: 80px;
+}
