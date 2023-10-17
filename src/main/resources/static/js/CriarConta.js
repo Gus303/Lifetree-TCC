@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const campos = document.querySelectorAll(".required");
 const spans = document.querySelectorAll(".span-required");
 const emailRegex = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/;
-const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{5,}$/;
+// const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z$*&@#]{5,}$/;
 // const spans = document.querySelectorAll('.span-required');
 
 // REGEX SENHA
@@ -53,19 +53,11 @@ function compareEmail() {
 
 // Validação dos campos de Senha
 function mainPasswordValidate() {
-  if (!senhaRegex.test(campos[3].value)) {
-    setError(3);
+  if (campos[2].value.length <4){
+    setError(2);
   } else {
-    removeError(3);
+    removeError(2);
     comparePassword();
   }
 }
 
-// Comparação de senhas
-function comparePassword() {
-  if (campos[4].value === campos[3].value && campos[3].value.length >= 5) {
-    removeError(4);
-  } else {
-    setError(4);
-  }
-}
